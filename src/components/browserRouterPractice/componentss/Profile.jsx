@@ -7,7 +7,7 @@ function Profile() {
     const navigate=useNavigate()
     const handlelogout=()=>{
         auth.logout();
-        navigate('/');
+        navigate('/'); 
 
     }
   return (

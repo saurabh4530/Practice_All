@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth } from "./Auth";
-import { useNavigate } from "react-router-dom";
+import { replace, useNavigate } from "react-router-dom";
 useNavigate
 
 function LogIn() {
@@ -9,7 +9,7 @@ function LogIn() {
   const navigate=useNavigate()
   const handleLogin=()=>{
     auth.login(user);
-    navigate("/")
+    navigate("/",{replace:true})
 
 
 

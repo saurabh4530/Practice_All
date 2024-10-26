@@ -3,9 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useAuth } from './Auth'
 
 function Navbar() {
-    const auth=useAuth(
-
-    )
+    const auth=useAuth()
   return (
      <nav className='primary-nav'>
         <NavLink to="/">Home</NavLink>
